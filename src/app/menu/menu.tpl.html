@@ -1,0 +1,10 @@
+<div class="collapse navbar-collapse" collapse="menuCollapsed" ng-controller="MenuController as menuCtrl">
+	<ul class="nav navbar-nav">
+		<li ng-repeat="(elem, props) in menuCtrl.menuElements" ui-sref-active="active">
+			<a href ui-sref="{{props.uiSref}}">
+				<i class="fa {{props.iconClass}}">
+				</i>{{elem}}
+			</a>
+		</li>
+	</ul>
+</div>
