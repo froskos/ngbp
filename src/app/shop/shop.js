@@ -1,4 +1,4 @@
-angular.module( 'ngBoilerplate.shop', [
+angular.module( 'brokoli.shop', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
@@ -13,7 +13,7 @@ angular.module( 'ngBoilerplate.shop', [
         templateUrl: 'shop/shop.tpl.html'
       }
     },
-    data:{ pageTitle: 'Shopiii!' }
+    data:{ pageTitle: 'Shop' }
   });
 })
 

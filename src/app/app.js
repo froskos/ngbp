@@ -1,10 +1,10 @@
-angular.module( 'ngBoilerplate', [
+angular.module( 'brokoli', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
-  'ngBoilerplate.shop',
-  'ngBoilerplate.menu',
+  'brokoli.home',
+  'brokoli.about',
+  'brokoli.shop',
+  'brokoli.menu',
   'ui.router'
 ])
 
@@ -20,7 +20,7 @@ angular.module( 'ngBoilerplate', [
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     console.info('changing state to ', toState, ' from ', fromState);
     if ( angular.isDefined( toState.data.pageTitle ) ) {
-      $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate' ;
+      $scope.pageTitle = toState.data.pageTitle + ' | brokoli' ;
     }
   });
 })

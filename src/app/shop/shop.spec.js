@@ -5,7 +5,7 @@
  * automatically.
  */
 describe( 'shop section', function() {
-  beforeEach( module( 'ngBoilerplate.home' ) );
+  beforeEach( module( 'brokoli.home' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();

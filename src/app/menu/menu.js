@@ -1,4 +1,4 @@
-angular.module( 'ngBoilerplate.menu', [])
+angular.module( 'brokoli.menu', [])
 
 .directive('mainMenu',function(){
 	return {
