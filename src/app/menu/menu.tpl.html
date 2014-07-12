@@ -3,7 +3,7 @@
 		<li ng-repeat="(elem, props) in menuCtrl.menuElements" ui-sref-active="active">
 			<a href ui-sref="{{props.uiSref}}">
 				<i class="fa {{props.iconClass}}">
-				</i>{{elem}}
+				</i>{{props.text}}
 			</a>
 		</li>
 	</ul>

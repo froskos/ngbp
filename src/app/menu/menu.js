@@ -10,15 +10,18 @@ angular.module( 'brokoli.menu', [])
 
 .controller('MenuController',function MenuController(){
 	this.menuElements = {
-		'Inicio':{
+		'0':{
+			'text': 'Inicio',
 			'uiSref':'home',
 			'iconClass':'fa-home'
 		},
-		'Tienda':{
+		'1':{
+			'text': 'Tienda',
 			'uiSref':'shop',
 			'iconClass':'fa-shopping-cart'
 		},
-		'Quienes somos':{
+		'2':{
+			'text': 'Quiénes somos',
 			'uiSref':'about',
 			'iconClass':'fa-info-circle'
 		}
