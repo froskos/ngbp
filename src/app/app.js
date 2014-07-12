@@ -17,6 +17,10 @@ angular.module( 'brokoli', [
 })
 
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
+  //App-wide constant and variables
+  $scope.appName = 'brokoli';
+
+  //App state management
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
     console.info('changing state to ', toState, ' from ', fromState);
     if ( angular.isDefined( toState.data.pageTitle ) ) {
