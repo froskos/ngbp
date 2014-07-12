@@ -26,10 +26,17 @@
  */
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'KGSecondChancesSolid';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
+  src: local('KG Second Chances Solid'), local('KGSecondChancesSolid'), url(fonts/KGSecondChancesSolid.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'KGSecondChancesSketch';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KG Second Chances Sketch'), local('KGSecondChancesSketch'), url(fonts/KGSecondChancesSketch.woff) format('woff');
 }
 
 code, pre, .pre {
@@ -57,6 +64,23 @@ pre {
   }
 }
 
+.bk-reversed {
+  display:inline-block;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  /* Last 2 values in Mozilla requires a unit */
+  -moz-transform: matrix(-1, 0, 0, 1, 0px, 0px);
+  -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.bk-header {
+  font-family: 'KGSecondChancesSketch', sans-serif;
+  font-size: 60px;
+  font-color: @dark-green;
+  text-align: center;
+}
+
 h2 {
   margin: 20px 0;
   color: #666;
@@ -68,6 +92,7 @@ h2 {
  */
 
 .navbar {
+  font-family: 'KGSecondChancesSolid', sans-serif;
   margin-top: 20px;
   
   small {
