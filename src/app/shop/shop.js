@@ -18,6 +18,25 @@ angular.module( 'brokoli.shop', [
 })
 
 .controller( 'ShopCtrl', function ShopCtrl( $scope ) {
+  $scope.products = products_dummy;
 })
 
 ;
+
+var products_dummy = {
+    'name':'',
+    'category':'',
+    'images':[''],
+    'price':'',
+    'stars':'',
+    'is':{
+      'local': true,
+      'vegetarian': false,
+      'vegan': false,
+      'glutenfree': false,
+      'fairtrade': false,
+      'offer': false,
+      'new': false
+    },
+    'reviews':[]
+  };
