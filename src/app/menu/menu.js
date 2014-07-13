@@ -7,7 +7,7 @@ angular.module( 'brokoli.menu', [])
 	};
 })
 
-.controller('MenuController',function MenuController(){
+.controller('MenuController',function (){
 	this.menuElements = {
 		'0':{
 			'text': 'Inicio',
