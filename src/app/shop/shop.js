@@ -19,6 +19,7 @@ angular.module( 'brokoli.shop', [
 
 .controller( 'ShopCtrl', function ShopCtrl( $scope ) {
   $scope.products = products_dummy;
+  $scope.categories = categories_dummy;
 })
 
 ;
@@ -40,3 +41,10 @@ var products_dummy = {
     },
     'reviews':[]
   };
+
+  var categories_dummy = [
+    'Cestas',
+    'Verduras',
+    'Frutas',
+    'Otros'
+  ];

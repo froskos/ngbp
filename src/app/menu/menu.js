@@ -3,8 +3,7 @@ angular.module( 'brokoli.menu', [])
 .directive('mainMenu',function(){
 	return {
 		restrict:'E',
-		templateUrl:'menu/menu.tpl.html',
-		controllerAs:'MenuCtrl'	
+		templateUrl:'menu/menu.tpl.html'
 	};
 })
 

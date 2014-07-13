@@ -1,1 +1,13 @@
-<div class="jumbotron"><p>HOLA MIS PAKETONES, BIENVENIDOS A MI TIENDA</p></div>
+<div class="row" ng-controller="ShopCtrl">
+	<div class="col-xs-12 col-sm-3 col-md-2 bk-left-column">{{dummyText}}</div>
+	<div class="col-xs-12 col-sm-9 col-md-10 bk-right-column">{{dummyText}}
+		<div ng-repeat="category in categories">
+			<div class="row"><div class="bk-shop-category-title">{{category}}</div>
+				<div ng-repeat="product in products">
+					<product-item></product-item>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
