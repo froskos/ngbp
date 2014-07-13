@@ -19,32 +19,98 @@ angular.module( 'brokoli.shop', [
 
 .controller( 'ShopCtrl', function ( $scope ) {
   $scope.products = products_dummy;
+  console.warn($scope.products);
   $scope.categories = categories_dummy;
 })
 
+// .directive('productElem', function(){
+//   return {
+//     restrict:'E',
+//     templateUrl:'shop/_product.tpl.html'
+//     controllerAs:'shopCtrl'
+//   };
+// })
+
 ;
 
-var products_dummy = {
-    'name':'',
-    'category':'',
-    'images':[''],
-    'price':'',
-    'stars':'',
-    'is':{
-      'local': true,
-      'vegetarian': false,
-      'vegan': false,
-      'glutenfree': false,
-      'fairtrade': false,
-      'offer': false,
-      'new': false
-    },
-    'reviews':[]
-  };
+//Dummy products 
+var product_template = {
+  'name':'',
+  'category':'',
+  'images':[''],
+  'price':'',
+  'stars':'',
+  'is':{
+    'local': true,
+    'vegetarian': false,
+    'vegan': false,
+    'glutenfree': false,
+    'fairtrade': false,
+    'offer': false,
+    'new': false
+  },
+  'reviews':[]
+};
 
-  var categories_dummy = [
-    'Cestas',
-    'Verduras',
-    'Frutas',
-    'Otros'
-  ];
+var pd1 = {
+  'name':'',
+  'category':'',
+  'images':[''],
+  'price':'',
+  'stars':'',
+  'is':{
+    'local': true,
+    'vegetarian': false,
+    'vegan': false,
+    'glutenfree': false,
+    'fairtrade': false,
+    'offer': false,
+    'new': false
+  },
+  'reviews':[]
+};
+
+var pd2 = {
+  'name':'',
+  'category':'',
+  'images':[''],
+  'price':'',
+  'stars':'',
+  'is':{
+    'local': true,
+    'vegetarian': false,
+    'vegan': false,
+    'glutenfree': false,
+    'fairtrade': false,
+    'offer': false,
+    'new': false
+  },
+  'reviews':[]
+};
+var pd3 = {
+  'name':'',
+  'category':'',
+  'images':[''],
+  'price':'',
+  'stars':'',
+  'is':{
+    'local': true,
+    'vegetarian': false,
+    'vegan': false,
+    'glutenfree': false,
+    'fairtrade': false,
+    'offer': false,
+    'new': false
+  },
+  'reviews':[]
+};
+
+var products_dummy = [pd1,pd2,pd3];
+
+//Dummy categories
+var categories_dummy = [
+  'cestas',
+  'verduras',
+  'frutas',
+  'otros'
+];
