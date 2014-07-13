@@ -54,7 +54,7 @@ var product_template = {
 
 var pd1 = {
   'name':'',
-  'category':'',
+  'category':'frutas',
   'images':[''],
   'price':'',
   'stars':'',
@@ -72,7 +72,7 @@ var pd1 = {
 
 var pd2 = {
   'name':'',
-  'category':'',
+  'category':'otros',
   'images':[''],
   'price':'',
   'stars':'',
@@ -89,7 +89,24 @@ var pd2 = {
 };
 var pd3 = {
   'name':'',
-  'category':'',
+  'category':'cestas',
+  'images':[''],
+  'price':'',
+  'stars':'',
+  'is':{
+    'local': true,
+    'vegetarian': false,
+    'vegan': false,
+    'glutenfree': false,
+    'fairtrade': false,
+    'offer': false,
+    'new': false
+  },
+  'reviews':[]
+};
+var pd4 = {
+  'name':'',
+  'category':'cestas',
   'images':[''],
   'price':'',
   'stars':'',
@@ -105,7 +122,7 @@ var pd3 = {
   'reviews':[]
 };
 
-var products_dummy = [pd1,pd2,pd3];
+var products_dummy = [pd1,pd2,pd3,pd4];
 
 //Dummy categories
 var categories_dummy = [
